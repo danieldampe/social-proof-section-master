@@ -1,0 +1,38 @@
+/* 
+// *** *** *** Comment Box *** *** ***
+*/
+.comment-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    padding: 2rem;
+    border-radius: 10px;
+    font-weight: var(--font-weight-medium);
+    color: var(--color-light-grayish-magenta);
+    background-color: var(--color-very-dark-magenta);
+}
+
+/* 
+// *** *** *** Header *** *** ***
+*/
+.comment-box__header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.comment-box-header__img {
+    width: 2.8rem;
+    border-radius: 50%;
+}
+
+.comment-box-header-user__label { 
+    font-weight: var(--font-weight-regular);
+    color: var(--color-soft-pink); 
+}
+
+@media screen and (min-width: 1000px) {
+    .comment-box:nth-child(2) { margin-top: 2rem; }
+
+    .comment-box:last-child { margin-top: 4rem; }
+}

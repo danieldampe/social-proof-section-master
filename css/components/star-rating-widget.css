@@ -1,0 +1,35 @@
+/* 
+// *** *** *** Star Rating Widget *** *** *** 
+*/
+.star-rating-widget {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: var(--color-light-grayish-magenta);
+}
+
+.star-rating-widget__div1 {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.star-rating-widget__div2 {
+    font-weight: var(--font-weight-bold);
+    color: var(--color-very-dark-magenta);
+}
+
+@media screen and (min-width: 1000px) {
+    .star-rating-widget { 
+        width: 85%;
+        flex-direction: row;
+        justify-content: flex-start; 
+        gap: 2rem;
+    }
+
+    .star-rating-widget:nth-child(2) { margin-inline: auto }
+
+    .star-rating-widget:last-child { margin-left: auto }
+};

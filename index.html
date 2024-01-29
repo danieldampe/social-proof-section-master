@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Social proof section</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/components/star-rating-widget.css">
+    <link rel="stylesheet" href="./css/components/comment-box.css">
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+        .attribution a { color: hsl(228, 45%, 44%); }
+    </style>
+</head>
+<body>
+    <!-- HTML -->
+    <div id="root">
+        <main id="main" class="main">
+            <div class="hero">
+                <h1 class="hero__title">
+                    10,000+ of our users love our products.
+                </h1>
+                <p class="hero__content">
+                    We only provide great products combined with excellent customer service.
+                    See what our satisfied customers are saying about our services.
+                </p>
+            </div>
+            <div class="rating-section"></div>
+            <div class="comment-section"></div>
+        </main>
+        <footer class="footer attribution">
+            Challenge by
+            <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"> 
+            Frontend Mentor
+            </a>. Coded by <a href="https://github.com/danieldampe" target="_blank">danieldampe</a>.
+        </footer>
+    </div>
+    <!-- Components -->
+    <template id="star-rating-widget">
+        <div class="star-rating-widget">
+            <div class="star-rating-widget__div1" data-stars></div>
+            <div class="star-rating-widget__div2">
+                Rated 
+                <span class="star-rating-widget-div2__stars-num" data-stars-num></span> 
+                Stars in
+                <span class="star-rating-widget-div2__source" data-source></span>
+            </div>
+        </div>
+    </template>
+    <template id="comment-box">
+        <div class="comment-box">
+            <div class="comment-box__header">
+                <img class="comment-box-header__img" data-user-img>
+                <div class="comment-box-header__user">
+                    <div class="comment-box-header-user__name" data-user-name></div>
+                    <div class="comment-box-header-user__label" data-user-label></div>
+                </div>
+            </div>
+            <p class="comment-box__main" data-content></p>
+        </div>
+    </template>
+    <!-- JS -->
+    <script type="module" src="./js/index.js"></script>
+</body>
+</html>
